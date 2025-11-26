@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-offwhite: #f9f9f9;
+  --card-bg: #ffffff;
+  --text-dark: #111827;
+  --text-gray: #6b7280;
+  --accent: #3b82f6;
+}
+
+body {
+  @apply bg-[var(--bg-offwhite)] text-[var(--text-dark)] font-sans min-h-screen w-screen m-0 p-0;
+}
+
+input, select, textarea, button {
+  @apply rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--accent)] transition duration-200;
+}
+
+button {
+  @apply bg-[var(--accent)] text-white font-semibold hover:bg-blue-500 transition;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 10px;
+  border: 2px solid #f3f4f6;
+}
